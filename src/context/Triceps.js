@@ -1,0 +1,26 @@
+const Triceps = [
+  { id: 1, name: 'Tríceps Testa com Barra' },
+  { id: 2, name: 'Tríceps Testa com Halteres' },
+  { id: 3, name: 'Tríceps Coice' },
+  { id: 4, name: 'Tríceps Pulley' },
+  { id: 5, name: 'Tríceps Pulley com Corda' },
+  { id: 6, name: 'Tríceps Pulley Inverso' },
+  { id: 7, name: 'Tríceps Francês' },
+  { id: 8, name: 'Tríceps Mergulho em Barras Paralelas' },
+  { id: 9, name: 'Tríceps Mergulho na Máquina' },
+  { id: 10, name: 'Tríceps na Polia com Pegada Inversa' },
+  { id: 11, name: 'Tríceps Banco' },
+  { id: 12, name: 'Tríceps Diamante (Flexão de Braço)' },
+  { id: 13, name: 'Tríceps Kickback com Cabo' },
+  { id: 14, name: 'Tríceps Extensão Overhead com Haltere' },
+  { id: 15, name: 'Tríceps Extensão Overhead com Barra' },
+  { id: 16, name: 'Tríceps Extensão Overhead na Polia' },
+  { id: 17, name: 'Tríceps Extensão com Barra W' },
+  { id: 18, name: 'Tríceps Tate Press' },
+  { id: 19, name: 'Tríceps Extensão com Halteres em Pronação' },
+  { id: 20, name: 'Tríceps Extensão Unilateral na Polia' },
+  { id: 21, name: 'Tríceps Unilateral'},
+  { id: 22, name: 'Tríceps Corda' },
+];
+
+export default Triceps;

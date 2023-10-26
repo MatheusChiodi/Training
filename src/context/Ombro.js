@@ -1,0 +1,25 @@
+const Ombro = [
+  { id: 1, name: 'Desenvolvimento com Barra' },
+  { id: 2, name: 'Desenvolvimento com Halteres' },
+  { id: 3, name: 'Elevação Lateral com Halteres' },
+  { id: 4, name: 'Elevação Frontal com Halteres' },
+  { id: 5, name: 'Elevação Frontal com Barra' },
+  { id: 6, name: 'Remada Alta com Barra' },
+  { id: 7, name: 'Face Pull' },
+  { id: 8, name: 'Crucifixo Inverso com Halteres' },
+  { id: 9, name: 'Crucifixo Inverso na Polia' },
+  { id: 10, name: 'Press Arnold' },
+  { id: 11, name: 'Elevação Lateral na Polia' },
+  { id: 12, name: 'Desenvolvimento Posterior com Halteres' },
+  { id: 13, name: 'Desenvolvimento na Máquina' },
+  { id: 14, name: 'Elevação Lateral na Máquina' },
+  { id: 15, name: 'Desenvolvimento Militar' },
+  { id: 16, name: 'Shrug (Encolhimento) com Halteres' },
+  { id: 17, name: 'Shrug (Encolhimento) com Barra' },
+  { id: 18, name: 'Shrug na Máquina Smith' },
+  { id: 19, name: 'Elevação Lateral com Pegada Inversa' },
+  { id: 20, name: 'Press de Ombros na Máquina Smith' },
+  { id: 21, name: 'Elevação Frontal na Máquina' },
+];
+
+export default Ombro;
