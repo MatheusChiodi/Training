@@ -1,4 +1,5 @@
 export default function App() {
+
   const muscles = [
     {
       muscle: 'Peito',
@@ -75,9 +76,20 @@ export default function App() {
   ];
 
   return (
-    <>
-      <div className="flex justify-center items-center w-full h-screen">
-        <div className="grid grid-rows-6 md:grid-rows-4 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px]">
+    <div className="w-full h-screen flex items-center justify-center">
+      <div className="fixed flex justify-center items-center w-full top-2">
+        <div className="bg-[#282A36] w-[350px] h-[40px] rounded-[20px] flex justify-around items-center">
+          <p className="text-[#F8F8F2] cursor-pointer hover:text-[#bbbbbbde]">
+            Historico
+          </p>
+          <p className="text-[#F8F8F2]">|</p>
+          <p className="text-[#F8F8F2] cursor-pointer hover:text-[#bbbbbbde]">
+            Musculo
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center items-center w-full h-[600px] md:h-auto mt-[50px] md:mt-0 md:overflow-hidden overflow-scroll">
+        <div className="grid grid-rows-6 md:grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px] lg:w-[992px]">
           {muscles.map((muscle) => (
             <button
               key={muscle.id}
@@ -90,14 +102,6 @@ export default function App() {
           ))}
         </div>
       </div>
-      <div className="absolute flex justify-center items-center w-full top-2">
-        <div className="bg-[#282A36] w-[350px] h-[40px] rounded-[20px] flex justify-around">
-          <p>
-          </p>
-          <div className="bg-[#F8F8F2] rounded-[50%] h-[40px] w-[40px] text-center flex justify-center items-center mr-[-40px] mt-[20px] border-[#282A36] border-[5px]">
-          </div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
