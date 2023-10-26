@@ -75,13 +75,29 @@ export default function App() {
   ];
 
   return (
-    <div>
-      {muscles.map((muscle) => (
-        <div key={muscle.id}>
-          <img src={muscle.img} alt={muscle.muscle} />
-          <h1>{muscle.muscle}</h1>
+    <>
+      <div className="flex justify-center items-center w-full h-screen">
+        <div className="grid grid-rows-6 md:grid-rows-4 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px]">
+          {muscles.map((muscle) => (
+            <button
+              key={muscle.id}
+              className="w-[150px] rounded-[10px] flex flex-col justify-center items-center buttonMuscle"
+              style={{ background: muscle.bg }}
+            >
+              <img src={muscle.img} alt={muscle.muscle} />
+              <h1>{muscle.muscle}</h1>
+            </button>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+      <div className="absolute flex justify-center items-center w-full top-2">
+        <div className="bg-[#282A36] w-[350px] h-[40px] rounded-[20px] flex justify-around">
+          <p>
+          </p>
+          <div className="bg-[#F8F8F2] rounded-[50%] h-[40px] w-[40px] text-center flex justify-center items-center mr-[-40px] mt-[20px] border-[#282A36] border-[5px]">
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
