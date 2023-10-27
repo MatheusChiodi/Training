@@ -56,7 +56,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
 
   return (
     <div className="h-screen w-full flex flex-col items-center mt-[20px]">
-      <div className="w-[93%] md:w-[80%] min-w-[350px] flex justify-between items-center border rounded-xl">
+      <div className="w-[93%] md:w-[60%] min-w-[350px] flex justify-between items-center border rounded-xl bg-white">
         <p className="flex-1 ps-2 truncate">
           {muscle} - {exercise}
         </p>
@@ -69,7 +69,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
           Voltar
         </button>
       </div>
-      <div className="w-[93%] md:w-[80%] min-w-[350px] mt-[15px] flex justify-center items-center">
+      <div className="w-[93%] md:w-[60%] min-w-[350px] mt-[15px] flex justify-center items-center">
         <div className="w-full">
           <label htmlFor="peso1" className="text-[#282A36] font-semibold">
             Peso Inicial:
@@ -105,7 +105,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
         </div>
       </div>
 
-      <div className="w-[93%] md:w-[80%] min-w-[350px] mt-[25px] flex justify-center items-center">
+      <div className="w-[93%] md:w-[60%] min-w-[350px] mt-[25px] flex justify-center items-center">
         <div className="w-full">
           <label htmlFor="repeticoes" className="text-[#282A36] font-semibold">
             Repetições:
@@ -143,7 +143,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
 
       <button
         id="save"
-        className="hidden w-[93%] md:w-[80%] min-w-[350px] mt-[25px] mx-auto border rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500"
+        className="hidden w-[93%] md:w-[60%] min-w-[350px] mt-[25px] mx-auto border rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500"
         onClick={() => {
           handleSave();
         }}

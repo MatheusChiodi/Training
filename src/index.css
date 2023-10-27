@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 body{
-  background-color: #F8F8F2;
-}
-
-.buttonMuscle:hover {
-  filter: brightness(0.9);
-  transition: 0.2s;
+  background-image: url('./background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 html, body {
@@ -16,6 +15,23 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+.buttonMuscle:hover {
+  filter: brightness(0.9);
+  transition: 0.2s;
+}
+
+
 
 .App {
   min-height: 100vh;

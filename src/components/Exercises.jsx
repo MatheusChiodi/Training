@@ -14,7 +14,6 @@ import TricepsData from '../context/Triceps';
 import TrapezioData from '../context/Trapezio';
 
 export default function Exercises({ onMuscle, muscle, onExercise }) {
-
   const [exercises, setExercises] = useState([]);
   const muscleToExercisesMap = {
     Abdômen: AbdomenData,
@@ -49,7 +48,7 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
           Escolha 1 exercicio:
         </h1>
       </div>
-      <div className="bg-white w-[350px] h-[350px] overflow-auto border-[#282A36] border-[1px] rounded-[10px]">
+      <div className="bg-white w-[350px] h-[350px] overflow-auto border-[#282A36] border-[1px] rounded-[10px] scrollbar-hide">
         {exercises &&
           exercises.map((exercise) => (
             <div key={exercise.id} className="border-b-[2px] p-2 text-center">

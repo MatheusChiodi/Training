@@ -10,7 +10,7 @@ export default function View({
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-[30%] min-w-[350px] flex justify-center items-center bg-white mb-[20px] mt-[50px]">
+      <div className="w-[30%] min-w-[350px] flex justify-center items-center bg-white mb-[20px] mt-[50px] rounded-[10px]">
         <div className="w-[100%] mx-auto border rounded-l-[10px] p-[10px]">
           <p>
             {selectDay} - {selectMuscle}
