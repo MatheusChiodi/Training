@@ -8,7 +8,7 @@ export default function Header({ page, setPage, onMuscle, sessionData }) {
           {sessionData &&
             (page === 'Historico' ? (
               <>
-                <p className="text-[#FF5555]">Historico</p>
+                <p className="text-[#FF5555]">Histórico</p>
                 <p className="text-[#F8F8F2]">|</p>
               </>
             ) : (
