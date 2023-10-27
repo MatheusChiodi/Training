@@ -120,7 +120,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
         </div>
 
         <div className="w-full">
-          <label htmlFor="peso2" className="text-[#282A36] font-semibold">
+          <label htmlFor="series" className="text-[#282A36] font-semibold">
             Séries:
           </label>
           <input

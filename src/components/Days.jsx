@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function Days({ sessionData }) {
+export default function Days({ sessionData, onSelect }) {
   const [selectDay, setSelectDay] = useState('');
 
   function groupByDateAndMuscle(data) {
@@ -25,11 +25,17 @@ export default function Days({ sessionData }) {
             <div
               key={index}
               onClick={() => setSelectDay(date)}
-              className="mx-auto mb-[20px] w-[300px] text-center border-[#282A36] border-[2px] rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500 cursor-pointer"
+              className="mx-auto mb-[20px] w-[300px] text-center border-[#282A36] border-[2px] rounded-[10px] p-[10px] bg-white flex justify-between items-center transition-all duration-500 "
             >
+              <i
+                className="fas fa-eye hover:text-[#FF5555] transition-all duration-500 cursor-pointer"
+                onClick={() => onSelect(date, muscle)}
+                title='Visualizar'
+              ></i>
               <p>
                 {date} - {muscle}
               </p>
+              <i className="fas fa-share-square hover:text-[#FF5555] transition-all duration-500 cursor-pointer" title='Pegar dados'></i>
             </div>
           );
         })}

@@ -54,7 +54,7 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
           exercises.map((exercise) => (
             <div key={exercise.id} className="border-b-[2px] p-2 text-center">
               <button
-                className="cursor-pointer hover:text-[#6272A4] transition-all duration-300"
+                className="cursor-pointer hover:text-[#FF5555] transition-all duration-300"
                 onClick={() => onExercise(exercise.name)}
               >
                 {exercise.name}
