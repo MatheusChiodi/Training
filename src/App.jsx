@@ -1,26 +1,41 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Muscles from './components/Muscles';
 import Exercises from './components/Exercises';
+import Register from './components/Register';
 
 export default function App() {
   const [page, setPage] = useState('Musculo');
   const [muscle, setMuscle] = useState('');
-  const [exercises, setExercises] = useState([]);
+  const [exercise, setExercise] = useState('');
+  const [sessionData, setSessionData] = useState(null);
 
   const nullMuscle = () => {
     setMuscle('');
-    setExercises([]);
+    setExercise('');
   };
+
+  useEffect(() => {
+    const savedData = sessionStorage.getItem('exerciseData');
+    if (savedData) {
+      setSessionData(JSON.parse(savedData));
+    }
+  }, []);
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
-      <Header page={page} setPage={setPage} onMuscle={nullMuscle} />
+      <Header page={page} setPage={setPage} onMuscle={nullMuscle} sessionData={sessionData}/>
 
       {page === 'Musculo' && muscle === '' ? (
         <Muscles onMuscle={setMuscle} />
-      ) : page === 'Musculo' && muscle !== '' ? (
-        <Exercises muscle={muscle} onMuscle={nullMuscle} />
+      ) : page === 'Musculo' && muscle !== '' && exercise === '' ? (
+        <Exercises
+          muscle={muscle}
+          onMuscle={nullMuscle}
+          onExercise={setExercise}
+        />
+      ) : page === 'Musculo' && muscle !== '' && exercise !== '' ? (
+        <Register onMuscle={nullMuscle} muscle={muscle} exercise={exercise} />
       ) : null}
     </div>
   );
