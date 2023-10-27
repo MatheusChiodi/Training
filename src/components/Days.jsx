@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function Days({ sessionData, onSelect }) {
-  const [selectDay, setSelectDay] = useState('');
-
+export default function Days({ sessionData, onSelect}) {
   function groupByDateAndMuscle(data) {
     return data.reduce((acc, curr) => {
       let key = `${curr.date}-${curr.muscle}`;
@@ -24,7 +22,6 @@ export default function Days({ sessionData, onSelect }) {
           return (
             <div
               key={index}
-              onClick={() => setSelectDay(date)}
               className="mx-auto mb-[20px] w-[300px] text-center border-[#282A36] border-[2px] rounded-[10px] p-[10px] bg-white flex justify-between items-center transition-all duration-500 "
             >
               <i
