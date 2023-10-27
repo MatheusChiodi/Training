@@ -39,7 +39,7 @@ export default function App() {
   }, [muscle]);
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
+    <div className="w-full h-screen flex flex-col">
       <Header
         page={page}
         setPage={setPage}

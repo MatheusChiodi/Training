@@ -75,9 +75,8 @@ export default function Muscles({ onMuscle }) {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full h-auto mt-[60px] md:mt-0 md:overflow-hidden overflow-scroll">
-      <div className="h-[20px]"></div>
-      <div className="md:mt-0 mt-[150px] pb-[30px] grid grid-rows-6 md:grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px] lg:w-[992px]">
+    <div className="flex justify-center items-start w-full pb-[30px] mt-[20px] lg:mt-[50px] h-screen overflow-auto">
+      <div className="grid grid-rows-6 md:grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px] lg:w-[992px]">
         {muscles.map((muscle) => (
           <button
             key={muscle.id}
