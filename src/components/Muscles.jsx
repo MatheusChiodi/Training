@@ -1,4 +1,4 @@
-export default function Muscles({onMuscle}) {
+export default function Muscles({ onMuscle }) {
   const muscles = [
     {
       muscle: 'Peito',
@@ -75,12 +75,13 @@ export default function Muscles({onMuscle}) {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full h-[600px] md:h-auto mt-[50px] md:mt-0 md:overflow-hidden overflow-scroll">
-      <div className="grid grid-rows-6 md:grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px] lg:w-[992px]">
+    <div className="flex justify-center items-center w-full h-auto mt-[60px] md:mt-0 md:overflow-hidden overflow-scroll">
+      <div className="h-[20px]"></div>
+      <div className="md:mt-0 mt-[150px] pb-[30px] grid grid-rows-6 md:grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4 mx-auto w-[350px] md:w-[500px] lg:w-[992px]">
         {muscles.map((muscle) => (
           <button
             key={muscle.id}
-            className="w-[150px] rounded-[10px] flex flex-col justify-center items-center buttonMuscle"
+            className="w-[150px] h-[160px] rounded-[10px] flex flex-col justify-center items-center buttonMuscle"
             style={{ background: muscle.bg }}
             onClick={() => onMuscle(muscle.muscle)}
           >
