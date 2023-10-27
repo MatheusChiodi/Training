@@ -1,3 +1,4 @@
+import { faXing } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 
 export default function Register({ onMuscle, muscle, exercise }) {
@@ -31,6 +32,11 @@ export default function Register({ onMuscle, muscle, exercise }) {
 
     const date = `${day}/${month}/${year}`;
 
+    const x = Math.random() * 1000;
+    const y = Math.random() * 1000;
+
+    const id = (x * y + day + month + year).toString();
+
     const newData = {
       muscle,
       exercise,
@@ -39,6 +45,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
       repeticoes,
       series,
       date,
+      id,
     };
     const updatedDataList = [...dataList, newData];
     setDataList(updatedDataList);
