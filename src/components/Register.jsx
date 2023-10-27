@@ -28,10 +28,18 @@ export default function Register({ onMuscle, muscle, exercise }) {
     const day = today.getDate();
     const month = today.getMonth() + 1;
     const year = today.getFullYear();
-    
+
     const date = `${day}/${month}/${year}`;
 
-    const newData = { muscle, exercise, peso1, peso2, repeticoes, series,date };
+    const newData = {
+      muscle,
+      exercise,
+      peso1,
+      peso2,
+      repeticoes,
+      series,
+      date,
+    };
     const updatedDataList = [...dataList, newData];
     setDataList(updatedDataList);
 
@@ -47,25 +55,21 @@ export default function Register({ onMuscle, muscle, exercise }) {
   };
 
   return (
-    <>
-      <div className="w-[50%] min-w-[350px] flex justify-center items-center bg-white">
-        <div className="w-[100%] mx-auto border rounded-l-[10px] p-[10px]">
-          <p>
-            {muscle} - {exercise}
-          </p>
-        </div>
-        <div>
-          <button
-            className="w-[100%] mx-auto border rounded-r-[10px] p-[10px] hover:bg-[#d6d6d5] transition-all duration-500"
-            onClick={() => {
-              onMuscle();
-            }}
-          >
-            Voltar
-          </button>
-        </div>
+    <div className="h-screen w-full flex flex-col items-center mt-[20px]">
+      <div className="w-[93%] md:w-[80%] min-w-[350px] flex justify-between items-center border rounded-xl">
+        <p className="flex-1 ps-2 truncate">
+          {muscle} - {exercise}
+        </p>
+        <button
+          className="border-l flex-shrink-0 w-[70px] h-auto p-[10px] hover:bg-[#d6d6d5] transition-all duration-500 rounded-r-[10px]"
+          onClick={() => {
+            onMuscle();
+          }}
+        >
+          Voltar
+        </button>
       </div>
-      <div className="w-[50%] min-w-[350px] mt-[15px] flex justify-center items-center">
+      <div className="w-[93%] md:w-[80%] min-w-[350px] mt-[15px] flex justify-center items-center">
         <div className="w-full">
           <label htmlFor="peso1" className="text-[#282A36] font-semibold">
             Peso Inicial:
@@ -101,7 +105,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
         </div>
       </div>
 
-      <div className="w-[50%] min-w-[350px] mt-[25px] flex justify-center items-center">
+      <div className="w-[93%] md:w-[80%] min-w-[350px] mt-[25px] flex justify-center items-center">
         <div className="w-full">
           <label htmlFor="repeticoes" className="text-[#282A36] font-semibold">
             Repetições:
@@ -139,13 +143,13 @@ export default function Register({ onMuscle, muscle, exercise }) {
 
       <button
         id="save"
-        className="hidden w-[50%] min-w-[350px] mt-[25px] mx-auto border rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500"
+        className="hidden w-[93%] md:w-[80%] min-w-[350px] mt-[25px] mx-auto border rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500"
         onClick={() => {
           handleSave();
         }}
       >
         Salvar
       </button>
-    </>
+    </div>
   );
 }

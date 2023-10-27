@@ -38,8 +38,8 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
   }, [muscle]);
 
   return (
-    <>
-      <div className="flex justify-center items-center mt-[50px]">
+    <div className=" h-screen w-full flex flex-col items-center">
+      <div className="flex justify-center items-center mt-[20px]">
         <button
           className="fas fa-arrow-left text-[16px] mx-2 mt-[-12px] cursor-pointer hover:text-[#6272A4] transition-all duration-300"
           onClick={onMuscle}
@@ -62,6 +62,6 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
             </div>
           ))}
       </div>
-    </>
+    </div>
   );
 }
