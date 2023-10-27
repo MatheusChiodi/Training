@@ -55,7 +55,7 @@ export default function Register({ onMuscle, muscle, exercise }) {
   };
 
   return (
-    <div className="h-screen w-full flex flex-col items-center mt-[20px]">
+    <div className="h-screen w-full flex flex-col items-center md:justify-center mt-[20px]">
       <div className="w-[93%] md:w-[60%] min-w-[350px] flex justify-between items-center border rounded-xl bg-white">
         <p className="flex-1 ps-2 truncate">
           {muscle} - {exercise}

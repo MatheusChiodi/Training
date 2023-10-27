@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function Header({ page, setPage, onMuscle, sessionData }) {
   return (
-    <div className="w-full flex items-center justify-center bg-[#F8F8F2]">
+    <div className="fixed w-full flex items-center justify-center bg-[#F8F8F2]">
       <div className="flex justify-center items-center w-full bg-[#F8F8F2] pt-[20px]">
         <div className="bg-[#282A36] w-[350px] h-[40px] rounded-[10px] flex justify-around items-center">
           {sessionData &&
