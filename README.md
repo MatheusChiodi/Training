@@ -2,7 +2,7 @@
 
 ---
 
-**O projeto "Training Record versão web"** foi meticulosamente desenvolvido usando a renomada biblioteca 🚀 **ReactJS**. Este projeto promete:
+**O projeto "Training Record versão web"** foi meticulosamente desenvolvido usando **ReactJS**. Este projeto promete:
 
 - 🌐 Uma **experiência web fluida e responsiva** para todos os usuários.
   
@@ -14,7 +14,7 @@
 
 ## 🧐 Por que ReactJS?
 
-React é uma das bibliotecas mais populares e confiáveis para desenvolvimento web. Sua capacidade de criar experiências ricas para o usuário, juntamente com sua adaptabilidade entre plataformas, torna-o a escolha ideal para este projeto.
+Sua capacidade de criar experiências ricas para o usuário, juntamente com sua adaptabilidade entre plataformas, torna-o a escolha ideal para este projeto.
 
 ---
 
