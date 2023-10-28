@@ -1,8 +1,19 @@
-# React + Vite
+# 📌 Training Record - Versão Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+**O projeto "Training Record versão web"** foi meticulosamente desenvolvido usando a renomada biblioteca 🚀 **ReactJS**. Este projeto promete:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌐 Uma **experiência web fluida e responsiva** para todos os usuários.
+  
+- 🔄 Uma transição suave e eficaz do original desenvolvido em **React Native**.
+
+> 🔍 **Nota**: Este sistema foi inspirado e baseado no projeto **"MChiodi - Training Record"**, desenvolvido originalmente com React Native. A evolução para a web demonstra a poderosa flexibilidade e adaptabilidade do ecossistema React, fornecendo soluções robustas tanto para plataformas móveis quanto para web.
+
+---
+
+## 🧐 Por que ReactJS?
+
+React é uma das bibliotecas mais populares e confiáveis para desenvolvimento web. Sua capacidade de criar experiências ricas para o usuário, juntamente com sua adaptabilidade entre plataformas, torna-o a escolha ideal para este projeto.
+
+---
