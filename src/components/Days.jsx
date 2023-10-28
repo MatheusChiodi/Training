@@ -29,7 +29,7 @@ export default function Days({ sessionData, onSelect }) {
     const formattedData = data
       .map(
         (item) =>
-          `musculo: ${item.muscle} - data: ${item.date} - peso inicial: ${item.peso1} - peso final: ${item.peso2} - repetições: ${item.repeticoes} - séries: ${item.series}`
+          `Musculo: ${item.muscle} - Data: ${item.date} - Exercicio: ${item.exercise} - Peso inicial: ${item.peso1} - Peso final: ${item.peso2} - Repetições: ${item.repeticoes} - Séries: ${item.series}`
       )
       .join('\n');
     navigator.clipboard
