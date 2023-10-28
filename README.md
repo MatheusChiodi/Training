@@ -17,3 +17,5 @@
 React é uma das bibliotecas mais populares e confiáveis para desenvolvimento web. Sua capacidade de criar experiências ricas para o usuário, juntamente com sua adaptabilidade entre plataformas, torna-o a escolha ideal para este projeto.
 
 ---
+
+![Wallpaper do Training Record versão web](./public/trainingrecordweb.png)
