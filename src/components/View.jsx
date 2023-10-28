@@ -62,7 +62,7 @@ export default function View({
   }, [training]);
 
   return (
-    <div className="w-full flex flex-col items-center mt-[40px]">
+    <div className="h-screen w-full flex flex-col items-center pt-[40px] md:pb-[40px] pb-[20px]">
       {training !== '' ? (
         <>
           {training.map((item) => (
@@ -70,6 +70,10 @@ export default function View({
               <div
                 key={item.id}
                 className="w-[30%] min-w-[350px] flex justify-center items-center bg-white mb-[20px] mt-[50px] rounded-[10px]"
+                style={{
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
               >
                 <div className="w-[100%] mx-auto border rounded-l-[10px] p-[10px]">
                   <p>
@@ -104,6 +108,10 @@ export default function View({
                     onChange={(e) => {
                       setPeso1(e.target.value);
                     }}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
                   />
                 </div>
 
@@ -123,6 +131,10 @@ export default function View({
                     value={peso2}
                     onChange={(e) => {
                       setPeso2(e.target.value);
+                    }}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
                     }}
                   />
                 </div>
@@ -146,6 +158,10 @@ export default function View({
                     onChange={(e) => {
                       setRepeticoes(e.target.value);
                     }}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
                   />
                 </div>
 
@@ -166,6 +182,10 @@ export default function View({
                     onChange={(e) => {
                       setSeries(e.target.value);
                     }}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
                   />
                 </div>
               </div>
@@ -176,6 +196,10 @@ export default function View({
                 onClick={() => {
                   handleEdit();
                 }}
+                style={{
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
               >
                 Editar
               </button>
@@ -184,7 +208,13 @@ export default function View({
         </>
       ) : (
         <>
-          <div className="w-[30%] min-w-[350px] flex justify-center items-center bg-white mb-[20px] mt-[50px] rounded-[10px]">
+          <div
+            className="w-[30%] min-w-[350px] flex justify-center items-center bg-white mb-[20px] mt-[50px] rounded-[10px]"
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
+          >
             <div className="w-[100%] mx-auto border rounded-l-[10px] p-[10px]">
               <p>
                 {selectDay} - {selectMuscle}
@@ -199,11 +229,15 @@ export default function View({
               </button>
             </div>
           </div>
-          <div className="w-[30%] min-w-[350px] h-[350px] overflow-auto">
+          <div className="w-[30%] min-w-[350px] h-[100%] overflow-auto">
             {selected.map((item) => (
               <div
                 key={item.id}
                 className="flex flex-col justify-center items-center w-full mt-[20px]"
+                style={{
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
               >
                 <div className="border rounded-t-[10px] w-full p-2 text-center bg-[#d6d6d5] flex justify-around items-center">
                   <p>{item.exercise}</p>

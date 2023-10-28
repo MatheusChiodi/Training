@@ -63,7 +63,13 @@ export default function Register({ onMuscle, muscle, exercise }) {
 
   return (
     <div className="h-screen w-full flex flex-col items-center md:justify-center mt-[80px] md:mt-[20px]">
-      <div className="w-[93%] md:w-[60%] min-w-[350px] flex justify-between items-center border rounded-xl bg-white">
+      <div
+        className="w-[93%] md:w-[60%] min-w-[350px] flex justify-between items-center border rounded-xl bg-white"
+        style={{
+          boxShadow:
+            '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        }}
+      >
         <p className="flex-1 ps-2 truncate">
           {muscle} - {exercise}
         </p>
@@ -91,6 +97,10 @@ export default function Register({ onMuscle, muscle, exercise }) {
             onChange={(e) => {
               setPeso1(e.target.value);
             }}
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
           />
         </div>
 
@@ -107,6 +117,10 @@ export default function Register({ onMuscle, muscle, exercise }) {
             value={peso2}
             onChange={(e) => {
               setPeso2(e.target.value);
+            }}
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
             }}
           />
         </div>
@@ -127,6 +141,10 @@ export default function Register({ onMuscle, muscle, exercise }) {
             onChange={(e) => {
               setRepeticoes(e.target.value);
             }}
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
           />
         </div>
 
@@ -144,6 +162,10 @@ export default function Register({ onMuscle, muscle, exercise }) {
             onChange={(e) => {
               setSeries(e.target.value);
             }}
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
           />
         </div>
       </div>
@@ -153,6 +175,10 @@ export default function Register({ onMuscle, muscle, exercise }) {
         className="hidden w-[93%] md:w-[60%] min-w-[350px] mt-[25px] mx-auto border rounded-[10px] p-[10px] bg-white hover:bg-[#d6d6d5] transition-all duration-500"
         onClick={() => {
           handleSave();
+        }}
+        style={{
+          boxShadow:
+            '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
         }}
       >
         Salvar

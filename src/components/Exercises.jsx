@@ -37,7 +37,7 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
   }, [muscle]);
 
   return (
-    <div className=" h-screen w-full flex flex-col items-center">
+    <div className="h-screen w-full flex flex-col items-center">
       <div className="flex justify-center items-center mt-[70px]">
         <button
           className="fas fa-arrow-left text-[16px] mx-2 mt-[-12px] cursor-pointer hover:text-[#6272A4] transition-all duration-300"
@@ -48,7 +48,13 @@ export default function Exercises({ onMuscle, muscle, onExercise }) {
           Escolha 1 exercicio:
         </h1>
       </div>
-      <div className="bg-white w-[350px] h-[350px] overflow-auto border-[#282A36] border-[1px] rounded-[10px] scrollbar-hide">
+      <div
+        className="bg-white w-[350px] h-[70%] overflow-auto border-[#282A36] border-[1px] rounded-[10px] scrollbar-hide"
+        style={{
+          boxShadow:
+            '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        }}
+      >
         {exercises &&
           exercises.map((exercise) => (
             <div key={exercise.id} className="border-b-[2px] p-2 text-center">

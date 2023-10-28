@@ -46,8 +46,16 @@ export default function Days({ sessionData, onSelect }) {
     <div className="w-full flex flex-col items-center">
       <div className="w-[50%] min-w-[350px] h-[350px] mt-[50px] md:mt-0 overflow-auto flex flex-col justify-center items-center">
         {notification.show && (
-          <div className="absolute bottom-0 left-0 w-full p-4 text-center bg-[#d6d6d5] border border-gray-200 shadow-lg rounded-md">
-            {notification.message}
+          <div className="absolute bottom-1 left-auto z-50 w-[350px] p-1 text-center bg-[#282A36] border border-gray-200 shadow-lg rounded-[10px]">
+            <p
+              className="text-[18px] m-0 p-0 text-[#F8F8F2]"
+              style={{
+                boxShadow:
+                  '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
+            >
+              {notification.message}
+            </p>
           </div>
         )}
         {Object.entries(groupedData).map(([key, value], index) => {
@@ -56,6 +64,10 @@ export default function Days({ sessionData, onSelect }) {
             <div
               key={index}
               className="mx-auto mb-[20px] w-[300px] text-center border-[#282A36] border-[2px] rounded-[10px] p-[10px] bg-white flex justify-between items-center transition-all duration-500 "
+              style={{
+                boxShadow:
+                  '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
             >
               <i
                 className="fas fa-eye hover:text-[#FF5555] transition-all duration-500 cursor-pointer"

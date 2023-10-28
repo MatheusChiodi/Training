@@ -38,6 +38,13 @@ export default function App() {
     }
   }, [muscle]);
 
+  useEffect(() => {
+    const savedData = sessionStorage.getItem('exerciseData');
+    if (savedData) {
+      setSessionData(JSON.parse(savedData));
+    }
+  }, [selected]);
+
   return (
     <div className="w-full h-screen flex flex-col">
       <Header

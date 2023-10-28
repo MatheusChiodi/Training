@@ -81,7 +81,11 @@ export default function Muscles({ onMuscle }) {
           <button
             key={muscle.id}
             className="w-[150px] h-[160px] rounded-[10px] flex flex-col justify-center items-center buttonMuscle"
-            style={{ background: muscle.bg }}
+            style={{
+              background: muscle.bg,
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
             onClick={() => onMuscle(muscle.muscle)}
           >
             <img src={muscle.img} alt={muscle.muscle} />
