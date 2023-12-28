@@ -44,7 +44,8 @@ export default function Days({ sessionData, onSelect }) {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-[50%] min-w-[350px] h-[350px] mt-[50px] md:mt-0 overflow-auto flex flex-col justify-center items-center">
+      <div className="w-[50%] min-w-[350px] pt-10 overflow-auto flex flex-col justify-center items-center">
+        <div className="h-[50px] w-full"></div>
         {notification.show && (
           <div className="absolute bottom-1 left-auto z-50 w-[350px] p-1 text-center bg-[#282A36] border border-gray-200 shadow-lg rounded-[10px]">
             <p
@@ -85,6 +86,8 @@ export default function Days({ sessionData, onSelect }) {
             </div>
           );
         })}
+
+        <div className="h-[150px] w-full"></div>
       </div>
     </div>
   );
